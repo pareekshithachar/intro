@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+import {Routes , Route, Router} from 'react-router-dom';
+import Navbar from './components/navbar/navbar.js';
 import './App.css';
-
+import Home from './components/home/home.js';
+import AOS from 'aos';
+import {useEffect, useState} from 'react';
 function App() {
+  useEffect(() => {
+		AOS.init({
+			once: true,
+			duration: 300,
+			easing: 'ease-out-quart',
+		});
+	}, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='min-w-screen min-h-screen overflow-hidden'>
+    <Navbar/>
+      <div className =" ml-20 flex flex-col justify-center items-center relative max-h-full ">
+   
+      <Home/>
+      <Home/>
+
+      <Home/>
+      <Home/>
+      <Home/>
+
+    
+    
+      </div>
     </div>
+   
+    
+    
+    
+    </>
+    
+    
   );
 }
 
