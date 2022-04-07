@@ -16,14 +16,14 @@ function App() {
     <>
     <div className='min-w-screen min-h-screen overflow-hidden'>
     <Navbar/>
-      <div className =" ml-20 flex flex-col justify-center items-center relative max-h-full ">
+      <div className ="flex flex-col justify-center items-center relative pl-[4rem] max-h-full ">
    
       <Home/>
       <Home/>
 
       <Home/>
       <Home/>
-      <Home/>
+      
 
     
     
