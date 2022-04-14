@@ -20,7 +20,7 @@ const Card = ({text, title, picture,altpicture,content }) =>{
       <h2>Boiler text moment boiler text moment</h2>
 
       <div className='inline-flex' >
-      <a target="_blank" rel="noreferrer" href= {content[3]}> <Button content={content[0]}/></a>
+      <a target="_blank" rel="noreferrer"> <Button content={content[0]}/></a>
       <a className=''><Button content={content[1]}/></a>
       
       </div>

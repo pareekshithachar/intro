@@ -11,7 +11,7 @@ const Navbar = (props)=>{
     const links = [faLinkedin,faGithub,faInstagram];
     const hrefs = ['https://www.linkedin.com/in/pareekshith-n-1a3b44197/','https://github.com/pareekshithachar','https://www.instagram.com/pareekshithachar/'];
     return(
-        <div className= " z-10 w-16 sm:w-40 h-[100vh]  fixed top-[50%] translate-y-[-50%] bg-black/10 md:bg-black/50 backdrop-blur-[3px] backdrop-saturate-100  flex flex-col sm:px-0 px-1">
+        <div className= "w-16 sm:w-40 h-[100vh]  fixed top-[50%] translate-y-[-50%] bg-black/10 md:bg-black/50 backdrop-blur-[3px] backdrop-saturate-100  flex flex-col sm:px-0 px-1">
         
             <div className="flex w-[90%]   mx-auto  justify-center space-x-2 py-2">
                 <div className="w-[40px] h-[40px] rounded-[50%]  relative  ">
@@ -28,7 +28,7 @@ const Navbar = (props)=>{
                 <br/>
             <hr className="text-gray-900 border-1 w-[100%]"/>
             
-            {/* Links */}
+            
             <ul className="justify-center flex flex-col h-screen pb-2 ">
                <a href = '#home' onClick={()=>setActive('home')} className=" flex text-white/80 items-center space-x-2  hover:bg-white/10   hover:cursor-pointer w-[90%] mx-auto rounded-[15px] p-2 group  relative transition duration-300 ease-in-out hover:scale-110">
               
